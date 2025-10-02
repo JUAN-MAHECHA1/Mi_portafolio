@@ -12,12 +12,6 @@
     --primary-color: #3A8BC4;
     --black-color: #000000;
     --white-color: #ffff;
-
-    --fs-title1: 80px;
-    --fs-title2: 42px;
-    --fs-title3: 24px;
-    --fs-title4: 18px;
-    --fs-text: 16px;
 }
 
 /* 4) estilos generales */
@@ -42,50 +36,176 @@ span {
     font-family: "Karma", serif;
 }
 
-body{
+body {
     background: var(--black-color);
 }
 
 
-.bg-nav{
+.bg-nav {
     background: var(--primary-color);
 }
-.navbar-brand-logo{
-    margin-top: 5px;
-    width: 12%;
+
+/* ---------------- HEADER ---------------- */
+.navbar {
+    padding: 15px 0;
 }
 
-#navbarNav{
-    margin-top: 5px;
-    position: absolute;
-    right: 70px;
-    font-size: 32pxs;
+.logo-img {
+    max-height: 60px;
+    width: auto;
 }
-.container-fluid {
-    padding-left: 70px; 
-}
-.btn-c{
-    background: var(--white-color);
-    border-radius: 20px;
-    text-decoration: none;
-}
-h2,h3{
+
+.navbar-nav .nav-link {
+    font-size: 20px;
+    font-weight: 500;
     color: var(--white-color);
+    margin-left: 20px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #222;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 78px;
+    font-weight: lighter;
+    color: var(--white-color);
+    border: 3px solid var(--white-color);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px 0 15px 0;
+    text-align: center;
 }
 
 
+.hero-section h3 {
+    font-size: 40px;
+    margin-top: 10px;
+    color: var(--white-color);
+    text-align: center;
+}
+
+/* Contenedor de los enlaces */
+.links {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos generales de todos los enlaces */
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    transition: 0.3s;
+    text-decoration: none;
+    line-height: 0;
+}
+
+/* Hover general */
+.links a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Botón CURRÍCULO */
+.links a.btn-c {
+    border-radius: 30px;
+    width: auto;
+    padding: 0 20px;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.links a.btn-c img {
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Hover solo para curriculo */
+.links a.btn-c:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.links a.btn-c:hover img {
+  filter: brightness(0) invert(1);
+}
+
+/* Imagen perfil */
+.perfil-img {
+    max-width: 800px;
+}
 
 
+/* Iconos sociales */
+.social-icons a {
+    font-size: 50px;
+    margin: 0 8px;
+    color: var(--white-color);
+    transition: color 0.3s;
+}
 
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Contenedor de la foto + iconos */
+.perfil-container {
+    position: relative;
+    display: inline-block;
+    margin: 50px auto;
+}
+
+/* Iconos flotantes */
+.perfil-container img[class^="icon-"] {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.perfil-container img[class^="icon-"]:hover {
+    transform: scale(1.2);
+}
+
+/* Posiciones específicas */
+.icon-html {
+    top: 140px;
+    left: -2px;
+}
+
+.icon-bootstrap {
+    top: 40%;
+    right: -8px;
+}
+
+.icon-sql {
+    top: 80%;
+    left: 80px;
+}
 
 
 
 /* 5) desktop */
 /* 6) table */
-@media screen and (min-width: 768px) and (max-width: 1080){
+@media screen and (min-width: 768px) and (max-width: 1080) {}
 
-}
 /* 7) smartphone */
-@media screen and (min-width: 320px) and (max-width: 767px){
-    
-}
+@media screen and (min-width: 320px) and (max-width: 767px) {}
