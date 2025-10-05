@@ -516,6 +516,46 @@ body {
     }
 }
 
+/* section hobbies */
+#hobbies {
+    background-color: #000000;
+}
+
+
+#hobbies .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+#hobbies .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.25);
+}
+
+#hobbies h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#hobbies .card-title {
+    color: #000;
+}
+
+#hobbies .card:hover .card-title {
+    color: #007bff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) grayscale(100%);
+}
+
+
 
 
 
