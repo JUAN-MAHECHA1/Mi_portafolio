@@ -555,6 +555,58 @@ body {
     filter: invert(1) grayscale(100%);
 }
 
+/* FOOTER */
+.footer-azul {
+    background-color: #46a9f6;
+}
+
+/* Íconos sociales centrados total */
+.social-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #46a9f6;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+    line-height: 1;
+    /* Evita desalineación vertical */
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Hover sin que se mueva */
+.social-icon:hover {
+    background-color: #46a9f6;
+    color: #000;
+    transform: scale(1.05);
+}
+
+/* QR */
+.qr-footer {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.qr-footer:hover {
+    transform: scale(1.05);
+}
+
 
 
 
